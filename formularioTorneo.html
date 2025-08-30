@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms Torneo de Videojuegos</title>
+</head>
+<body>
+
+  <h2>Inscripcion para Torneo de Videojuegos</h2>
+
+  <form action="resultado.html" method="GET">
+    <table border="1" cellpadding="8" cellspacing="0">
+
+      <!-- Nombre -->
+      <tr>
+        <td><label for="nombre">Nombre del jugador:</label></td>
+        <td>
+          <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="15" placeholder="Entre 3 y 15 caracteres">
+        </td>
+      </tr>
+
+      <!-- Correo -->
+      <tr>
+        <td><label for="correo">Correo electrónico:</label></td>
+        <td>
+          <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+        </td>
+      </tr>
+
+      <!-- Edad -->
+      <tr>
+        <td><label for="edad">Edad:</label></td>
+        <td>
+          <input type="number" id="edad" name="edad" required min="12" max="40">
+        </td>
+      </tr>
+
+      <!-- Nickname -->
+      <tr>
+        <td><label for="nickname">Nickname:</label></td>
+        <td>
+          <input type="text" id="nickname" name="nickname" required pattern="[A-Za-z0-9]+" required placeholder="Solo letras y números">
+        </td>
+      </tr>
+
+      <!-- Categoría -->
+      <tr>
+        <td><label>Categoría:</label></td>
+        <td>
+          <input type="radio" id="principiante" name="categoria" value="principiante" required>
+          <label for="principiante">Principiante</label>
+
+          <input type="radio" id="intermedio" name="categoria" value="intermedio">
+          <label for="intermedio">Intermedio</label>
+
+          <input type="radio" id="experto" name="categoria" value="experto">
+          <label for="experto">Experto</label>
+        </td>
+      </tr>
+
+      <!-- Juegos favoritos -->
+      <tr>
+        <td><label>Juegos favoritos:</label></td>
+        <td>
+          <input type="checkbox" id="mariokart" name="juegos" value="MarioKart">
+          <label for="mariokart">Mario Kart</label>
+
+          <input type="checkbox" id="lol" name="juegos" value="LOL">
+          <label for="lol">LOL</label>
+
+          <input type="checkbox" id="minecraft" name="juegos" value="Minecraft">
+          <label for="minecraft">Minecraft</label>
+
+          <input type="checkbox" id="gta" name="juegos" value="GTA">
+          <label for="gta">GTA</label>
+
+          <input type="checkbox" id="smashb" name="juegos" value="SmashB">
+          <label for="smashb">Smash Bros</label>
+
+          <input type="checkbox" id="fortnite" name="juegos" value="Fortnite">
+          <label for="fortnite">Fortnite</label>
+
+          <input type="checkbox" id="fifa" name="juegos" value="FIFA">
+          <label for="fifa">FIFA</label>
+        </td>
+      </tr>
+
+      <!-- Fecha -->
+      <tr>
+        <td><label for="fecha">Fecha de inscripción:</label></td>
+        <td>
+          <input type="date" id="fecha" name="fecha" required min="2025-01-01" max="2025-12-31">
+        </td>
+      </tr>
+
+      <!-- Botones -->
+      <tr>
+        <td colspan="2" style="text-align:center;">
+          <input type="submit" value="Enviar formulario">
+          <input type="reset" value="Restablecer formulario">
+        </td>
+      </tr>
+
+    </table>
+  </form>
+
+</body>
+</html>
